@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ecf0f1;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+#intro {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#intro h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#typing-effect {
+    font-size: 1.5em;
+    color: #ecf0f1;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+#projects .project-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#projects .project-card h3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+#projects .project-card h3 a:hover {
+    color: #2c3e50;
+}
+
+#projects .project-card p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Internship Section */
+#internships .internship-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#internships .internship-card ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#internships .internship-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#contact .contact-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#contact .contact-details a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .contact-details a:hover {
+    color: #f39c12;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #intro h1 {
+        font-size: 2.5em;
+    }
+
+    #typing-effect {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
